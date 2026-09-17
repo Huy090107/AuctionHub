@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Smart Map</title>
+
+    <link rel="stylesheet" href="firstPage.css" />
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="title">🗺️ SMART MAP</div>
+
+      <!-- Location -->
+
+      <div class="form-row">
+        <label for="location"> Location: </label>
+
+        <div class="location-input-container">
+          <input
+            type="text"
+            id="location"
+            placeholder="Enter your location"
+            autocomplete="off"
+          />
+
+          <!-- Location suggestions -->
+
+          <div id="locationSuggestions" class="suggestions"></div>
+        </div>
+      </div>
+
+      <!-- What do you want -->
+
+      <div class="form-row">
+        <label for="category"> I want to: </label>
+
+        <select id="category">
+          <option value="food">Food</option>
+
+          <option value="coffee">Coffee</option>
+
+          <option value="entertainment">Entertainment</option>
+        </select>
+      </div>
+
+      <!-- Budget -->
+
+      <div class="form-row">
+        <label for="budget"> Budget: </label>
+
+        <input type="text" id="budget" placeholder="Enter your budget" />
+
+        <span> VND </span>
+      </div>
+
+      <!-- Max distance -->
+
+      <div class="form-row">
+        <label for="distance"> Max distance: </label>
+
+        <input type="text" id="distance" placeholder="Enter max distance" />
+
+        <span> km </span>
+      </div>
+
+      <!-- Find button -->
+
+      <div class="button-container">
+        <button type="button" id="findButton">FIND PLACES</button>
+      </div>
+    </div>
+
+    <script src="firstPage.js"></script>
+  </body>
+</html>
